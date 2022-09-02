@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularios en html 5 - Tecsup</title>
+</head>
+<body>
+    <h1 style="background-color:rgb(7, 214, 241)">Nuevas caracteristicas de HTML 5 - DISEÑO WEB </h1>
+    <h2 style="color:rgb(2, 154, 255)">Seccion A: Informacion del cliente</h2>
+    <hr/>
+    <form id="form - order">
+        <p>
+            <label for="cargo">Cargo</label>
+            <input type="text" name="cargo" id="cargo" max="100" min="4" step="4">
+        </p>
+        <p>
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name"
+            autofocus
+            autocomplete
+            required>
+        </p>
+        <p>
+            <label for="PrimerApellido">Primer Apellido</label>
+            <input type="text" name="PrimerApellido" id="PrimerApellido" max="100" min="4" step="4"
+            autofocus
+            autocomplete
+            required>
+        </p>
+        <p>
+            <label for="Segundo Apellido">Segundo Apellido</label>
+            <input type="text" name="Segundo Apellido" id="Segundo Apellido" max="100" min="4" step="4"
+            autofocus
+            autocomplete
+            required>
+        </p>
+        <p>
+            <label for="email">Correo Electronico (Obligatorio)</label>
+            <input type="text" name="name" id="email" >
+        </p>
+        <p>
+            <label for="telefono">Numero de Telefono (Obligatorio)</label>
+            <input type="text" name="telefono" id="telefono" min="9" max="9">
+        </p>
+
+        <h2 style="color:rgb(2, 154, 255)">Seccion B: Informacion del viaje</h2>
+        <hr/>
+    
+        <p>
+            <label for="telefono">Nombre de Aerolinea</label>
+            <input list="aerolineas">
+            <datalist id="aerolineas">
+                <option value="SKY PERU">
+                <option value="STAR-UP">
+                <option value="VIVA PERÚ">
+                <option value="WAYRAPERÚ">
+            </datalist> 
+        </p>
+        <p>
+            <label for="name">Destino</label>
+            <input type="text" name="name" id="name">
+        </p>
+        <p>
+            <label for="fecha">Fecha Salida </label>
+            <input type="date" name="fecha" id="fecha" min="2020-01-01">
+        </p>
+        <p>
+            <label for="fecha">Fecha Regreso </label>
+            <input type="date" name="fecha" id="fecha" min="2020-01-01">
+        </p>
+        <p>
+            <label for="costo">Costo estimado</label>
+            <input type="number" name="costo" id="costo" max="1000" min="100">
+        </p>
+        <p>
+            <label for="coche">Alquiler de coche</label>
+            <input type="number" name="coche" id="coche" max="600" min="100">
+        </p>
+        <p>
+            <label for="hotel">Hotel</label>
+            <input type="text" name="hotel" id="hotel">
+        </p>
+        <p>
+            <label for="comida">Comidas</label>
+            <input type="number" name="comida">
+        </p>
+        <p>
+            <label for="Testimado">Total estimado</label>
+            <input type="number" name="Testimado">
+        </p>
+        <p>
+            <fieldsetlabel for="chek">¿Incluye la visita al cliente?</label>
+                <label><input type="checkbox" name="envio" value=y checked=""></label>
+            </fieldset>
+        </p>
+        <p>
+            <fieldsetlabel for="metdo">Metodo de pago utilizado<br/></label>
+                <label><input type="checkbox" name="envio" value="metalico" checked="">Metalico<br/></label>
+                <label><input type="checkbox" name="envio" value="targetaC" checked="">Targeta de credito<br/></label>
+                <label><input type="checkbox" name="envio" value="Cheque" checked="">Cheque<br/></label>
+            </fieldset>
+        </p>
+        <p>
+            <label for="pass">Proposito de viaje</label>
+            <input type="password" name="pass" id="pass">
+        </p>
+        <input type="submit" name="Enviar">
+    </form>
+</body>
+</html>
